@@ -13,7 +13,7 @@ class CompanyController extends Controller
 {
     public function index(): AnonymousResourceCollection
     {
-        return CompanyResouce::collection(Company::all());
+        return CompanyResouce::collection(Company::query()->latest()->get());
     }
 
     public function store(CompanyRequest $request): CompanyResouce
