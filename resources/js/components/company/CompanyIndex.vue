@@ -6,8 +6,6 @@
             </div>
         </div>
 
-        <router-link :to="{ name: 'companies.create' }" class="text-sm font-medium">Create company</router-link>
-
         <table class="min-w-full border divide-y divide-gray-200">
             <thead>
             <tr>
