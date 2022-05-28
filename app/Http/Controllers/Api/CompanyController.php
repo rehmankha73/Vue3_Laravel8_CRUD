@@ -39,6 +39,6 @@ class CompanyController extends Controller
     {
         $company->delete();
 
-        return response()->noContent();
+        return response()->json(['data' => 'Company deleted successfully!'], 200);
     }
 }
